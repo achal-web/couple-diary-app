@@ -1,0 +1,49 @@
+# React Native
+node_modules/
+.gradle
+.m2repository
+*.log
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Xcode
+ios/Pods
+.xcode.env
+.xcode.env.local
+ios/Podfile.lock
+
+# Android
+android/.gradle
+android/gradle
+android/local.properties
+android/.idea
+android/.gradle
+android/build
+android/.cxx
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
+# Build artifacts
+build/
+dist/
