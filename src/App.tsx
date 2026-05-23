@@ -9,6 +9,7 @@ import store from './redux/store';
 import HomeScreen from './screens/HomeScreen';
 import AddDiaryScreen from './screens/AddDiaryScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import TodoListScreen from './screens/TodoListScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -27,6 +28,15 @@ const App = () => {
             component={HomeScreen}
             options={{
               title: 'Memories',
+              tabBarLabel: 'Memories',
+            }}
+          />
+          <Tab.Screen
+            name="TodoList"
+            component={TodoListScreen}
+            options={{
+              title: 'To-Do List',
+              tabBarLabel: 'To-Do',
             }}
           />
           <Tab.Screen
@@ -34,6 +44,7 @@ const App = () => {
             component={AddDiaryScreen}
             options={{
               title: 'Add Memory',
+              tabBarLabel: 'Add',
             }}
           />
           <Tab.Screen
@@ -41,6 +52,7 @@ const App = () => {
             component={ProfileScreen}
             options={{
               title: 'Profile',
+              tabBarLabel: 'Profile',
             }}
           />
         </Tab.Navigator>
